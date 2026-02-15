@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .background-color {
+            width: 100%;
+            height: auto;
+            background-color: #F9F9FF;
+            padding: 80px;
+            margin: 0px;
+        }
+
+        .container > h2:first-child {
+            font-size: 42px;
+            color: black;
+            text-align: center;
+        }
+
+        .list {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            width: 22%;
+            height: auto;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border: 1px solid gray;
+            margin: 0px 10px;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .item {
+            width: 80px;
+            height: 80px;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid blue;
+            border-radius: 50%;
+            margin: 0 auto;
+            position: relative;
+            top: -30px;
+        }
+
+        .item > img {
+            max-width: 100%;
+            height: 40px;
+            object-fit: cover;
+        }
+
+        .box h3 {
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+            top: -20px;
+        }
+
+        .box p {
+            color: rgb(44, 40, 40);
+            font-size: 16px;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+            top: -10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Câu 2: Category (Danh sách danh mục)</h1>
+    <p><strong>Yêu cầu</strong>: Sử dụng HTML và CSS để dựng khối bên dưới.
+
+    <div class="background-color">
+        <div class="container">
+            <h2>Danh sách danh mục</h2>
+            <div class="list">
+                <div class="box">
+                    <a href="#">
+                        <img src="https://frontend.daca.vn/lessons/lesson-6/images/image-1.jpg" alt="">
+                        <div class="item">
+                            <img src="https://frontend.daca.vn/lessons/lesson-6/images/web-design.png" alt="">
+                        </div>
+                        <h3>Web Design</h3>
+                        <p>35 Khóa Học <i class="fa-solid fa-arrow-right"></i></p>
+                    </a>
+                    
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <img src="https://frontend.daca.vn/lessons/lesson-6/images/image-2.jpg" alt="">
+                        <div class="item">
+                            <img src="https://frontend.daca.vn/lessons/lesson-6/images/design.png" alt="">
+                        </div>
+                        <h3>Graphic Design</h3>
+                        <p>35 Khóa Học</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <img src="https://frontend.daca.vn/lessons/lesson-6/images/image-3.jpg" alt="">
+                        <div class="item">
+                            <img src="https://frontend.daca.vn/lessons/lesson-6/images/personal.png" alt="">
+                        </div>
+                        <h3>Development</h3>
+                        <p>35 Khóa Học</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <img src="https://frontend.daca.vn/lessons/lesson-6/images/image-4.jpg" alt="">
+                        <div class="item">
+                            <img src="https://frontend.daca.vn/lessons/lesson-6/images/server.png" alt="">
+                        </div>
+                        <h3>IT and Software</h3>
+                        <p>35 Khóa Học</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

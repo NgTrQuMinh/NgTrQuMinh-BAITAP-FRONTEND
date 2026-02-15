@@ -1,0 +1,41 @@
+:root {
+    --color-primary: #5CB874;
+    --color-foreign: #6f6f6f;
+}
+
+
+* {
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    font-family: sans-serif;
+    color: var(--color-text);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.button {
+    display: inline-block;
+    width: 100px;
+    background-color: var(--color-primary); 
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 99px;
+}
+
+.button-cicle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-primary); 
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}

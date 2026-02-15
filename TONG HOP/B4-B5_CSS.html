@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .button {
+            background-color: aliceblue;
+            width: 100px;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid gray;
+            margin: 10px;
+        }
+
+        .button-1 {
+            margin: 0px 10px;
+        }
+
+        .button-2 {
+            border-radius: 8px;
+        }
+
+        .button-3 {
+            border-radius: 30px;
+        }
+
+        .button:hover {
+            background-color: rgb(195, 195, 255);
+        }    
+        
+        .button-cicle {
+            background-color: whitesmoke;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 50%;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .button-cicle:hover {
+            background-color: rgb(178, 178, 255);
+        }
+
+        .button-cicle i {
+            font-size: 30px;
+            border-color: black;
+            color: #000000;
+        }
+
+        .button-square {
+            width: 50px;
+            height: 50px;
+            border: 1px solid whitesmoke;
+            font-size: 15px;
+            font-weight: 700;
+            color: gray;
+        }
+
+        .active, .button-square:hover {
+            background-color: rgb(165, 165, 255);
+        }
+
+        .menu li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #3eb75e;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        
+        .table-1 {
+            width: 50%;
+            height: auto;
+            border-collapse: collapse;
+            margin: 10px 0px;
+        }
+
+        .table-1 th {
+            background-color: rgb(149, 149, 255);
+            padding: 5px;
+        }
+
+        .table-1 td {
+            text-align: center;
+            border-bottom: 1px solid gray;
+            padding: 10px;
+        }
+
+        .table-hover tr:hover, .table-hover tr:nth-child(even) {
+            background-color: rgb(202, 202, 255);
+        }
+
+        /* Câu 8 */
+        .background-c8 {
+            width: 100%;
+            height: auto;
+            background-color: whitesmoke;
+            padding: 30px 0px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .background-c8 .box-c8 {
+            display: inline-block;
+            margin: 0px 15px;
+            color: black;
+        }
+
+        .background-c8 .box-c8 > img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;    
+            vertical-align: top;
+        }
+
+        .background-c8 .box-c8 > h3 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .background-c8 h3:hover {
+           color: red;
+        }
+
+        /* Câu 9 */
+        .background-c9 {
+            width: 100%;
+            height: auto;
+            background-color: whitesmoke;
+            padding: 30px 0px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .background-c9 > .box-c9 {
+            display: inline-block;
+            margin: 0px 15px;
+            color: black;
+        }
+
+        .background-c9 .box-c9 > img {
+            width: 200px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover;    
+            vertical-align: top;
+        }
+
+        .background-c9 .box-c9 > h3 {  
+            font-size: 20px;
+            margin: 10px 10px;
+        }
+
+        .background-c9 .box-c9 > p {
+            font-size: 15px;
+            color: gray;
+        }
+
+        .background-c9 h3:hover {
+           color: red;
+        }
+
+        /* Câu 10 */
+        .background-c10 {
+            width: 100%;
+            height: auto;
+            background-color: whitesmoke;
+            padding: 30px 0px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .background-c10 .box-c10 {
+            display: inline-block;
+            color: black;
+            width: 250px;
+            height: 220px;
+            background-color: white;
+            padding: 30px;  
+            border: 1px solid gray;
+            border-radius: 8px;
+            margin: 5px 5px;
+        }
+
+        .box-c10 > img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;    
+            vertical-align: top;
+        }
+
+        .box-c10 > h3 {  
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .box-c10 > p, .box-c10 > i {
+            font-size: 16px;
+            color: gray;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .background-c10 .box-c10:hover {
+           background-color: rgb(255, 108, 108);
+        }
+
+        /* Câu 11 */
+        .background-c11 {
+            width: 100%;
+            height: auto;
+            background-color: whitesmoke;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .background-c11 > h4 {
+            margin-top: 30px;
+            font-size: 24px;
+        }
+
+        .background-c11 .box-c11 {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            background-color: rgb(255, 255, 183);
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 5px;
+        }
+
+        .box-c11 > img {
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;    
+            vertical-align: top;
+        }
+
+        .box-c11 > h3 {
+            font-size: 24px;
+            margin: 10px;
+            color: black;
+            text-align: left;
+        }
+
+        .box-c11 > ul {
+            font-size: 15px;
+            margin: 5px 0px;
+            padding: 10px;
+            text-align: left;
+            color: gray;
+        }
+        .box-c11 > ul li {
+            margin: 8px 0px;
+        }
+
+        .box-c11 > p, box-c11 > i {
+            font-size: 15px;
+            font-weight: 700;
+            margin-top: 0px;
+            padding-left: 10px;
+            color: black;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .box-c11 > h3:hover {
+            color: red;
+        }
+
+        /* Bài 12 */
+        .background-c12 {
+            background-image: url(https://frontend.daca.vn/lessons/lesson-4-5/images/background.jpg);
+            width: 100%;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .box-c12 {
+            display: inline-block;
+            width: 250px;
+            color: white;
+            border-right: 1px solid white;
+            margin-top: 120px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .box-c12:last-child {
+            border-right: none;
+        }
+        
+        .box-c12 > h3 {
+            font-size: 40px;
+            margin: 0px 0px;
+        }
+
+        .box-c12 > p {
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0px 0px;
+        }
+
+        /* Bài 13 */
+        .background-c13 {
+            width: 500px;
+            height: auto;
+            border: 1px solid gray;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .background-c13 > h4 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .form-c13 input[type="email"], input[type="password"], input[type="text"] {
+            background-color: rgb(217, 217, 217);
+            width: 100%;
+            height: 50px;
+            padding: 20px;
+            border: 1px solid rgb(241, 241, 241);
+            border-radius: 7px;
+            margin-top: 10px;
+        }
+
+        .form-c13 > input[type="checkbox"], label[for="clause"], form-c13 > input[type="checkbox"] {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .form-c13 button {
+            background-color: rgb(149, 149, 255);
+            width: 100%;
+            height: 50px;
+            border: none;
+            border-radius: 7px;
+            margin-top: 10px;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bài tập bài 4 + 5</h1>
+    <h3>Câu 1: Buttons (Nút bấm)</h3>
+
+    <button class="button button-1">Button 1</button>
+    <button class="button button-2">Button 2<i class="fa-solid fa-caret-right"></i></button>
+    <button class="button button-3">Button 3<i class="fa-solid fa-angle-right"></i></button>
+    <button class="button button-4">Button 4<i class="fa-solid fa-arrow-right"></i></button>
+
+    <h3>Câu 2: Games (Trò chơi)</h3>
+    <button class="button-cicle"><i class="fa-brands fa-xbox"></i></button>
+    <button class="button-cicle"><i class="fa-brands fa-steam"></i></button>
+    <button class="button-cicle"><i class="fa-brands fa-twitch"></i></button>
+
+    <h3>Câu 3: Socials (Mạng xã hội)</h3>
+    <button class="button-cicle"><i class="fa-brands fa-facebook-f"></i></button>
+    <button class="button-cicle"><i class="fa-brands fa-x-twitter"></i></button>
+    <button class="button-cicle"><i class="fa-brands fa-instagram"></i></button>
+    <button class="button-cicle"><i class="fa-brands fa-tiktok"></i></button>
+
+    <h3>Câu 4: Pagination (Phân trang)</h3>
+    <button class="button-square"><i class="fa-solid fa-angle-left"></i></button>
+    <button class="button-square">1</button>
+    <button class="button-square">2</button>
+    <button class="button-square active">3</button>
+    <button class="button-square">4</button>
+    <button class="button-square">5</button>
+    <button class="button-square"><i class="fa-solid fa-angle-right"></i></button>
+
+    <h3>Câu 5: List (Danh sách)</h3>
+    <ul class="menu">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <h3>Câu 6: Table (Bảng)</h3>
+    <table class="table-1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Họ tên</th>
+                <th>Giới tính</th>
+                <th>Tuổi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lê Văn A</td>
+                <td>Nam</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Trần Thị B</td>
+                <td>Nữ</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nguyễn Văn C</td>
+                <td>Nam</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Câu 7: Table (Bảng)</h3>
+        <table class="table-1 table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Họ tên</th>
+                <th>Giới tính</th>
+                <th>Tuổi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lê Văn A</td>
+                <td>Nam</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Trần Thị B</td>
+                <td>Nữ</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nguyễn Văn C</td>
+                <td>Nam</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Phạm Thị D</td>
+                <td>Nữ</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Hoàng Văn E</td>
+                <td>Nam</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Vũ Thị F</td>
+                <td>Nữ</td>
+                <td>23</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Câu 8: Category (Danh sách danh mục)</h3>
+    <div class="background-c8">
+        <h4>Danh sách danh mục</h4>
+        <a class="box-c8" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-1.jpg" alt="">
+            <h3>Chemistry</h3>
+        </a>
+        <a class="box-c8" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-2.jpg" alt="">
+            <h3>Graphic Design</h3>
+        </a>
+        <a class="box-c8" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-3.jpg" alt="">
+            <h3>Software</h3>
+        </a>
+        <a class="box-c8" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-4.jpg" alt="">
+            <h3>Mobile App</h3>
+        </a>
+        <a class="box-c8" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-5.jpg" alt="">
+            <h3>Finance</h3>
+        </a>
+        <a class="box-c8" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-6.jpg" alt="">
+            <h3>Art & Humanities</h3>
+        </a>
+    </div>
+
+    <h3>Câu 9: Category (Danh sách danh mục)</h3>
+    <div class="background-c9">
+        <h4>Danh sách danh mục</h4>
+        <a class="box-c9" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-1.jpg" alt="">
+            <h3>Chemistry</h3>
+            <p>Web App Application</p>
+        </a>
+        <a class="box-c9" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-2.jpg" alt="">
+            <h3>Graphic Design</h3>
+            <p>Design is Art</p>
+        </a>
+        <a class="box-c9" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-3.jpg" alt="">
+            <h3>Software</h3>
+            <p>Web App Application</p>
+        </a>
+        <a class="box-c9" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-4.jpg" alt="">
+            <h3>Mobile App</h3>
+            <p>Web App Application</p>
+        </a>
+    </div>
+
+    <h3>Câu 10: Category (Danh sách danh mục)</h3>
+    <div class="background-c10">
+        <h4>Danh sách danh mục</h4>
+        <a class="box-c10" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/web-design.png" alt="">
+            <h3>Web Design</h3>
+            <p>25 sản phẩm <i class="fa-solid fa-arrow-right"></i></p>
+        </a>
+        <a class="box-c10" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/design.png" alt="">
+            <h3>Graphic Design</h3>
+            <p>20 sản phẩm <i class="fa-solid fa-arrow-right"></i></p>
+        </a>
+        <a class="box-c10" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/personal.png" alt="">
+            <h3>Development</h3>
+            <p>30 sản phẩm <i class="fa-solid fa-arrow-right"></i></p>
+        </a>
+        <a class="box-c10" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/server.png" alt="">
+            <h3>IT and Software</h3>
+            <p>28 sản phẩm <i class="fa-solid fa-arrow-right"></i></p>
+        </a>
+    </div>
+
+    <h3>Câu 11: Category (Danh sách danh mục)</h3>
+    <div class="background-c11">
+        <h4>Danh sách danh mục</h4>
+        <a class="box-c11" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-1.jpg" alt="">
+            <h3>Chemistry</h3>
+            <ul>
+                <li><i class="fa-regular fa-heart"></i> Health and Wellness</li>
+                <li><i class="fa-regular fa-flag"></i> Literacy and Language</li>
+                <li><i class="fa-regular fa-eye"></i> Social-Emotional Learning</li>
+                <li><i class="fa-regular fa-pen-to-square"></i> Visual and Creative Arts</li>
+                <li><i class="fa-solid fa-battery-three-quarters"></i> Thinking and Learning</li>
+            </ul>
+            <p>Xem Thêm <i class="fa-solid fa-arrow-right"></i></p>
+        </a>
+        <a class="box-c11" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-2.jpg" alt="">
+            <h3>Graphic Design</h3>
+            <ul>
+                <li><i class="fa-regular fa-heart"></i> Health and Wellness</li>
+                <li><i class="fa-regular fa-flag"></i> Literacy and Language</li>
+                <li><i class="fa-regular fa-eye"></i> Social-Emotional Learning</li>
+                <li><i class="fa-regular fa-pen-to-square"></i> Visual and Creative Arts</li>
+                <li><i class="fa-solid fa-battery-three-quarters"></i> Thinking and Learning</li>
+            </ul>
+            <p>Xem Thêm <i class="fa-solid fa-arrow-right"></i></p>
+        </a>
+        <a class="box-c11" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-3.jpg" alt="">
+            <h3>Software</h3>
+            <ul>
+                <li><i class="fa-regular fa-heart"></i> Health and Wellness</li>
+                <li><i class="fa-regular fa-flag"></i> Literacy and Language</li>
+                <li><i class="fa-regular fa-eye"></i> Social-Emotional Learning</li>
+                <li><i class="fa-regular fa-pen-to-square"></i> Visual and Creative Arts</li>
+                <li><i class="fa-solid fa-battery-three-quarters"></i> Thinking and Learning</li>
+            </ul>
+            <p>Xem Thêm <i class="fa-solid fa-arrow-right"></i></p>
+        </a>
+        <a class="box-c11" href="#">
+            <img src="https://frontend.daca.vn/lessons/lesson-4-5/images/image-4.jpg" alt="">
+            <h3>Mobile App</h3>
+            <ul>
+                <li><i class="fa-regular fa-heart"></i> Health and Wellness</li>
+                <li><i class="fa-regular fa-flag"></i> Literacy and Language</li>
+                <li><i class="fa-regular fa-eye"></i> Social-Emotional Learning</li>
+                <li><i class="fa-regular fa-pen-to-square"></i> Visual and Creative Arts</li>
+                <li><i class="fa-solid fa-battery-three-quarters"></i> Thinking and Learning</li>
+            </ul>
+            <p>Xem Thêm <i class="fa-solid fa-arrow-right"></i></p>
+        </a>
+    </div>
+
+
+    <h3>Câu 12: Counter (Các chỉ số)</h3>
+    <div class="background-c12">
+        <div class="box-c12">
+            <h3>500+</h3>
+            <p>Learners & counting</p>
+        </div>
+        <div class="box-c12">
+            <h3>800+</h3>
+            <p>Courses & Video</p>
+        </div>
+        <div class="box-c12">
+            <h3>1000+</h3>
+            <p>Certified Students</p>
+        </div>
+        <div class="box-c12">
+            <h3>100+</h3>
+            <p>Certified Students</p>
+        </div>
+    </div>
+    
+    <h3>Câu 13: Counter (Các chỉ số)</h3>
+    <div class="background-c13">
+        <h4>Login</h4>
+        <form action="" method="get" class="form-c13">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <br>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <br>
+            
+            <input type="checkbox" name="clause" id="clause" value="remember-me">
+            <label for="clause">Remember Me</label><br>
+
+            <button type="submit">Login</button>
+        </form>
+        <br><br>
+        <hr>
+        <h4>Register</h4>
+        <form action="" method="get" class="form-c13">
+            <input type="text" name="full_name" id="full_name" placeholder="Full Name">
+            <br>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <br>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <br>
+            
+            <input type="checkbox" name="clause" id="clause" value="I agree">
+            <label for="clause">I read & agree the terms & conditions.</label>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

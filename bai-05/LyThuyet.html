@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            background-color: blue;
+            padding: 20px;
+            border-radius: 8px;
+            position: relative; /* De can cac befor va affter chuan vao box */
+            overflow: hidden;   /* An di cac the thua */
+        }
+        
+        .box > .Lorem {
+            color: white;
+            font-size: 16px;
+            position: relative; /* De su dung z index */
+            z-index: 1; /* De noi dung len tren befor va affter */
+        }
+        
+        /* Fist-letter: Css Chứ cái đầu */
+        .box > .Lorem::first-letter {  
+            font-size: 500%;
+        }
+
+        /* First-line: Css chữ dòng đầu */
+        .box > .Lorem::first-line {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* Before va After: Css thêm các thẻ ảo trước và sau */
+        .box::before {
+            content: "";
+            display: block; 
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(255, 0, 0, 0.203);
+            position: absolute;
+            top: 5px;
+            left: 10px;
+        }
+
+        .box::after {
+            content: "";
+            display: block; 
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgba(255, 0, 0, 0.203);
+            position: absolute;
+            bottom: -100px;
+            right: -100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="Lorem">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, fugiat molestiae tempore quidem id ullam quo corru
+        pti! Commodi dicta culpa eaque! Ad, quos iure. Sequi soluta voluptate dicta ad vel.</p>
+        </div>
+    </div>
+</body>
+</html>

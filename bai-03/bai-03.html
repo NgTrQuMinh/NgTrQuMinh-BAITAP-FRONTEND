@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 03</title>
+</head>
+<body>
+    <h2>Câu 1: Tạo form Đăng ký tài khoản</h2>
+
+    <form action="" method="post">
+        <label for="full_name">Họ tên:</label><br>
+        <input type="text" id="full_name" name="full_name" placeholder="nguyen van a" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="nva@gmail.com" required><br>
+        <label for="password">Mật khẩu:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Đăng ký">
+    </form>
+
+    <h2>Câu 2: Tạo form Đăng ký chi tiết</h2>
+    <form action="" method="post">
+        <label for="full_name">Họ tên:</label><br>
+        <input type="text" id="full_name" name="full_name" placeholder="nguyen van a" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="nva@gmail.com" required><br>
+        
+        <label for="password">Mật khẩu:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        
+        <label for="confirm_password">Xác nhận mật khẩu:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" required><br>
+        
+        <label for="Sex">Giới tính:</label>
+        <input type="radio" id="male" name="sex" value="male" required>
+        <label for="male">Nam</label>
+        <input type="radio" id="female" name="sex" value="female" required>
+        <label for="female">Nữ</label>
+        <input type="radio" id="Other" name="sex" value="other" required>
+        <label for="other">Khác</label><br>
+
+        <select name="Country" id="Country">
+            <option value="VietNam">Việt Nam</option>
+            <option value="USA">Mỹ</option>
+            <option value="UK">Anh</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Úc</option>
+        </select><br><br>
+        <input type="submit" value="Đăng ký">
+    </form>
+
+    <h2>Câu 3: Tạo form Đánh giá sản phẩm</h2>
+    <form action="" method="post">
+        <label for="product_name">Tên sản phẩm:</label>
+        <input type="text" id="product_name" name="product_name" placeholder="Tên sản phẩm" required><br>
+        
+        <label for="rating">Đánh giá:</label>
+        <input type="radio" id="1star" name="rating" value="1" required>
+        <label for="1star">1 sao</label>
+        <input type="radio" id="2star" name="rating" value="2" required>
+        <label for="2star">2 sao</label>
+        <input type="radio" id="3star" name="rating" value="3" required>
+        <label for="3star">3 sao</label>
+        <input type="radio" id="4star" name="rating" value="4" required>
+        <label for="4star">4 sao</label>
+        <input type="radio" id="5star" name="rating" value="5" required>
+        <label for="5star">5 sao</label><br>
+        <label for="review">Bình luận:</label><br>
+        <textarea id="review" name="review" rows="4" cols="50" placeholder="Viết bình luận của bạn ở đây..." required></textarea><br><br>
+        <input type="submit" value="Gửi đánh giá">
+    </form>
+
+    <h2>Câu 4: Tạo form Liên hệ</h2>
+    <form action="" method="post">
+        <label for="full_name">Họ tên:</label><br>
+        <input type="text" id="full_name" name="full_name" placeholder="nguyen van a" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="nva@gmail.com" required><br>
+        <label for="Message">Nội dung tin nhắn:</label><br>
+        <textarea name="Message" id="Message" rows="4" cols="50"></textarea>><br><br>
+        <input type="submit" value="Gửi tin nhắn">
+    </form>
+
+    <h2>Câu 5: Tạo form Đặt phòng khách sạn</h2>
+    <form action="" method="post">
+        <label for="full_name">Họ tên:</label><br>
+        <input type="text" id="full_name" name="full_name" placeholder="nguyen van a" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="nva@gmail.com" required><br>
+        
+        <label for="Check-indate">Ngày nhận phòng:</label><br>
+        <input type="date" id="Check-indate" name="Check-indate" required><br>
+        <label for="Check-outdate">Ngày trả phòng:</label><br>
+        <input type="date" id="Check-outdate" name="Check-outdate" required><br>
+
+        <label for="room_type">Loại phòng:</label><br>
+        <select name="room_type" id="room_type">
+            <option value="single">Phòng đơn</option>
+            <option value="double">Phòng đôi</option>
+        </select><br>
+        <label for="Special_request">Yêu cầu đặc biêt:</label><br>
+        <textarea name="Special_request" id="Special_request" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Đặt phòng">
+    </form>
+
+    <h2>Câu 6: Tạo form Tìm kiếm</h2>
+    <form action="" method="get">
+        <input type="search" id="search_query" name="search_query" placeholder="Nhập từ khóa tìm kiếm..." required>
+        <input type="submit" value="Tìm kiếm">
+    </form>
+</body>
+</html>

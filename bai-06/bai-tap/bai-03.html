@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .Background {
+            background-color: #F9F9FF;
+            padding: 50px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container>h3 {
+            font-size: 42px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .inner-wrap {
+            display: flex;
+            justify-content: space-between;
+            flex-direction:row;
+        }
+
+        .inner-wrap .inner-box {
+            display: flex;
+            width: calc(100% / 4 - 10px);
+            border: 1px solid rgb(234, 234, 234);
+            background-color: #fff;
+            border-radius: 15px;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .inner-wrap .inner-box img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .inner-wrap .inner-box .inner-title {
+            color: black;
+            font-size: 18px;
+            font-weight: 900;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .inner-wrap .inner-box p {
+            color: rgb(125, 125, 125);
+            font-size: 14px;
+            font-weight: 900;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .inner-wrap .inner-box .inner-title:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Câu 3: Category (Danh sách danh mục)</h1>
+    <p><strong>Yêu cầu</strong>: Sử dụng HTML và CSS để dựng khối bên dưới.</p>
+
+    <div class="Background">
+        <div class="container">
+            <h3>Danh sách danh mục</h3>
+            <div class="inner-wrap">
+                <div class="inner-box">
+                    <img src="https://frontend.daca.vn/lessons/lesson-6/images/image-1.jpg" alt="Web Design" />
+                    <a href="#">
+                        <h3 class="inner-title">Web Design</h3>
+                        <p>35 Khóa Học<i class="fa-solid fa-arrow-right"></i></p>
+                    </a>
+                </div>
+                <div class="inner-box">
+                    <img src="https://frontend.daca.vn/lessons/lesson-6/images/image-2.jpg" alt="Graphic Design" />
+                        <a href="#">
+                            <h3 class="inner-title">Graphic Design</h3>
+                            <p>35 Khóa Học<i class="fa-solid fa-arrow-right"></i></p>
+                        </a>
+                </div>
+                <div class="inner-box">
+                    <img src="https://frontend.daca.vn/lessons/lesson-6/images/image-3.jpg" alt="Development" />
+                        <a href="#">
+                            <h3 class="inner-title">Development</h3>
+                            <p>35 Khóa Học<i class="fa-solid fa-arrow-right"></i></p>  
+                        </a>
+                </div>
+                <div class="inner-box">
+                    <img src="https://frontend.daca.vn/lessons/lesson-6/images/image-4.jpg" alt="IT and Software" />
+                        <a href="#">
+                            <h3 class="inner-title">IT and Software</h3>
+                            <p>35 Khóa Học<i class="fa-solid fa-arrow-right"></i></p>  
+                        </a> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

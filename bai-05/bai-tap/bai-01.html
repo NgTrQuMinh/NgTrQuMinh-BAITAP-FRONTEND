@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀI 1</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        /* Base button */
+        .button {
+            background-color: white;
+            border: 1px solid grey;
+            width: 150px;
+            height: 50px;
+            margin: 10px;
+            color: black;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Extra shapes */
+        .rounded-10 {
+            border-radius: 10px;
+        }
+
+        .rounded-20 {
+            border-radius: 20px;
+        }
+
+        .rounded-25 {
+            border-radius: 25px;
+        }
+
+        /* Hover */
+        .button:hover {
+            background-color: rgb(47, 0, 255);
+            color: white;
+        }
+
+        /* Icon spacing */
+        .button i {
+            margin-left: 6px;
+        }
+
+        /* Icon colors */
+        .icon-youtube {
+            color: red;
+        }
+
+        .icon-facebook {
+            color: blue;
+        }
+
+        .icon-instagram {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Câu 1: Buttons (Nút bấm)</h1>
+    <p><strong>Yêu cầu:</strong> Dựng lại các nút bên dưới bằng HTML & CSS.</p>
+
+    <div>
+        <button class="button">Button 1</button>
+
+        <button class="button rounded-10">
+            Button 2 <i class="fa-brands fa-youtube icon-youtube"></i>
+        </button>
+
+        <button class="button rounded-20">
+            Button 3 <i class="fa-brands fa-facebook icon-facebook"></i>
+        </button>
+
+        <button class="button rounded-25">
+            Button 4 <i class="fa-brands fa-square-instagram icon-instagram"></i>
+        </button>
+    </div>
+
+</body>
+
+</html>

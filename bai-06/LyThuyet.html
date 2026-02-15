@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            background-color: lightblue;
+            height: 100px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .main {
+            overflow: hidden; /* clear float */
+            margin-top: 10px;
+        }
+
+        .main .content {
+            background-color: rgb(0, 221, 255);
+            width: 70%;
+            height: 300px;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .main .aside {
+            background-color: rgb(255, 236, 113);
+            width: 30%;
+            height: 300px;
+            float: right;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .section {
+            clear: both;
+            padding: 10px;
+        }
+
+        .section div {
+            width: 23%;
+            height: 100px;
+            background-color: lightgreen;
+            float: left;
+            text-align: center;
+            line-height: 100px;
+            margin-right: 2%;
+        }
+
+        .section div:last-child {
+            margin-right: 0px;
+        }
+
+        .footer {
+            background-color: lightgray;
+            height: 50px;
+            margin-top: 100px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            clear: both;
+        }
+
+        /* VARIABLES: BIẾN GLOBAL CÁCH TẠO BIẾN VÀ SỬ DỤNG BIẾN CSS */
+        :root {
+            --background-color: #c0c0c0;
+            --font-color: #8c00ff;
+            --font-stack: 'Arial, sans-serif';
+        }
+
+        /* SỬ DỤNG BIẾN CSS */
+        p {
+            color: var(--font-color);
+            line-height: 1.6;
+            font-weight: bold;
+        }
+    
+        body {
+            background-color: var(--background-color);
+            font-family: var(--font-stack);
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- 1. FLOAT CLEAR  -->
+    <header class="header">
+        HEADER
+    </header>
+
+    <main class="main">
+        <div class="content">CONTENT</div>
+        <div class="aside">ASIDE</div>
+    </main>
+
+    <section class="section">
+        <div>BOX 1</div>
+        <div>BOX 2</div>
+        <div>BOX 3</div>
+        <div>BOX 4</div>
+    </section>
+
+    <footer class="footer">
+        FOOTER
+    </footer>
+    
+    <!-- BIẾN GLOBAL -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eius, laudantium alias esse a praesentium tenetur est. Similique, necessitatibus ipsa ipsam, praesentium magnam fugiat quasi itaque est aliquid, vero quibusdam?
+    </p>
+
+    
+</body>
+</html>

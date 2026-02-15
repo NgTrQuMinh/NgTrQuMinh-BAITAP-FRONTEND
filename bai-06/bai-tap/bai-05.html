@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style-type: none;
+            font-family: "Be Vietnam Pro", sans-serif;
+        }
+
+        .container {
+            max-width: 100%;
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .background-header {
+            background-color: #0A033C;
+            padding: 20px 100px;
+        }
+
+        .background-header .inner-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .inner-wrap .inner-logo img {
+            width: 200px;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .inner-wrap .inner-title ul {
+            display: flex;
+            flex-direction: row; 
+        }
+
+        .inner-wrap .inner-title ul li {
+            margin-left: 50px;
+        }
+
+        .inner-wrap .inner-title ul a {
+            color: #fff;
+            font-size: 22px;
+        }
+
+        .inner-wrap .inner-contact {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            background-color: #fff;
+            padding: 15px;  
+            border-radius: 8px;
+            margin-right: 20px;
+            color: #0A033C;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .inner-wrap .inner-title ul a:hover {
+            color: #00ADEF;
+        }
+
+        .inner-wrap .inner-contact:hover {
+            background-color: #00ADEF;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Câu 6: Header</h1>
+        <p><strong>Yêu cầu</strong>: Sử dụng HTML và CSS để dựng khối bên dưới.</p>
+        
+        <div class="background-header">
+            <div class="inner-wrap">
+                <div class="inner-logo">
+                    <a href="#">
+                        <img src="https://frontend.daca.vn/lessons/lesson-6/images/logo-28tech.svg" alt="28Tech">
+                    </a>
+                </div>
+                <div class="inner-title">
+                    <ul>
+                        <li>
+                            <a href="#" style="color: #00ADEF;">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Khóa học Zoom</a>
+                        </li>
+                        <li>
+                            <a href="#">Khóa học Video</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inner-contact">
+                    <a href="#">Liên hệ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

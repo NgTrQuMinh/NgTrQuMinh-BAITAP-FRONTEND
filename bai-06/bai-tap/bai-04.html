@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: "Be Vietnam Pro", sans-serif;
+        }
+        
+        .container {
+            max-width: 100%;
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container .inner-wrap {
+            display: flex;
+            background-color: #EFF1FF;
+            padding: 50px 50px;
+            border-radius: 15px;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .container .inner-wrap .inner-tag {
+            display: inline-block;
+            width: fit-content;
+            height: fit-content;
+            background-color: #E8DFFC;
+            padding: 8px;
+            border-radius: 99px;
+            margin-bottom: 10px;
+            color: #BB68E7;
+        }
+
+        .container .inner-wrap h1 {
+            color: #192335;
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .container .inner-wrap p {
+            color: #6B7385;
+        }
+
+        .container .inner-wrap .inner-form {
+            width: 50%;
+            position: relative;
+            padding: 50px 50px;
+        }
+
+        .container .inner-wrap .inner-form input {
+            color: gray;
+            padding: 20px;
+            width: 100%;
+            border: 1px solid whitesmoke;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .container .inner-wrap .inner-form .button-form {
+            background-color: #A04ECD;
+            padding: 10px;
+            border-radius: 5px;
+            color: #EFF1FF;
+            font-size: 14px;
+            font-weight: 900;
+            position: absolute;
+            top: 60px;
+            left: 370px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header"> 
+        <h1>Câu 4: Newsletter (Form đăng ký nhận tin)</h1>
+        <p><strong>Yêu cầu</strong>: Sử dụng HTML và CSS để dựng khối bên dưới.</p>
+    </header>
+
+    <main class="container">
+        <div class="inner-wrap">
+            <div class="inner-content">
+                <div class="inner-tag">
+                    Get Latest Histudy Update
+                </div>
+                <h1>Subscribe Our Newsletter</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="inner-form">
+                <form action="#" method="get">
+                    <input type="email" name="email" id="email" placeholder="Enter Your E-Email">
+                    <a href="#" target="_blank" class="button-form">
+                        Subscribe <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

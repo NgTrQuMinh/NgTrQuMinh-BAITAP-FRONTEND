@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BÀI 2</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <style>
+    .button-circle {
+      width: 100px;
+      height: 100px;
+      border: 1px solid rgb(198, 182, 182);
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.25s;
+    }
+
+    .circle-blue {
+      background-color: blue;
+      color: white;
+    }
+
+    .circle-white {
+      background-color: white;
+      color: black;
+    }
+
+    .circle-green {
+      background-color: rgb(102, 177, 102);
+      color: white;
+    }
+
+    .button-circle i {
+      font-size: 30px;
+    }
+
+    /* Hover */
+    .circle-green:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                  0 6px 20px rgba(0, 0, 0, 0.19);
+    }
+
+    .circle-white:hover {
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Câu 2: Buttons (Nút bấm)</h1>
+  <p><strong>Yêu cầu</strong>: Sử dụng HTML và CSS để dựng các nút.</p>
+
+  <div>
+    <button class="button-circle circle-blue">
+      <i class="fa-solid fa-play"></i>
+    </button>
+
+    <button class="button-circle circle-white">
+      <i class="fa-solid fa-play"></i>
+    </button>
+
+    <button class="button-circle circle-green">
+      <i class="fa-solid fa-phone-volume"></i>
+    </button>
+  </div>
+
+</body>
+
+</html>

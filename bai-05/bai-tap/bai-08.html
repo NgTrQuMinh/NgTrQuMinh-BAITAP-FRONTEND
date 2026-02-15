@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀI 8</title>
+
+    <!-- Import font Be Vietnam Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            text-decoration: none;
+        }
+
+        .background {
+            background-color: rgb(215, 207, 207);
+            width: 100%;
+            padding: 40px 0; /* thay height cố định -> auto */
+            text-align: center; /* căn giữa tất cả inline-block bên trong */
+        }
+
+        .background > h2 {
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+        }
+
+        .box-img {
+            display: inline-block;
+            margin: 10px 15px;
+            text-align: center;
+            vertical-align: top; /* tránh bị lệch hàng */
+        }
+
+        .box-img > img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        .box-img > h3 {
+            font-size: 16px;
+        }
+    
+        .box-img:hover > img {
+            border-color: rgb(255, 0, 0);
+        }
+
+        .box-img:hover > h3 {
+            color: rgb(255, 0, 0);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Câu 8: Category (Danh sách danh mục)</h1>
+    <p><strong>Yêu cầu</strong>: Sử dụng HTML và CSS để dựng khối bên dưới (Dùng kiểu hiển thị inline-block, dùng font Be Vietnam Pro).</p>
+
+    <div class="background">
+        <h2>Danh sách danh mục</h2>
+
+            <a href="#" class="box-img">
+                <img src="https://nailknowledge.org/wp-content/uploads/2021/04/chemical-1024x683.jpg" alt="Chemistry">
+                <h3>Chemistry</h3>
+            </a>
+
+            <a href="#" class="box-img">
+                <img src="https://images.ctfassets.net/szez98lehkfm/7qjhPfcvfIhxoHyXZnO6k/4152f21558d846177639a35a061fb664/MyIC_Article_114836?w=1106&h=622&fm=webp&fit=fill" alt="Graphic Design">
+                <h3>Graphic Design</h3>
+            </a>
+
+            <a href="#" class="box-img">
+                <img src="https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/175817/Originals/software-la-gi%20(4).jpg" alt="Software">
+                <h3>Software</h3>
+            </a>
+
+            <a href="#" class="box-img">
+                <img src="https://cdn2.fptshop.com.vn/unsafe/800x0/mobile_app_4_5992dd0fea.jpg" alt="Mobile App">
+                <h3>Mobile App</h3>
+            </a>
+
+            <a href="#" class="box-img">
+                <img src="https://www.brookings.edu/wp-content/uploads/2021/06/shutterstock_1708749826_small.jpg?quality=75&w=1500" alt="Finance">
+                <h3>Finance</h3>
+            </a>
+
+            <a href="#" class="box-img">
+                <img src="https://euc.ac.cy/wp-content/uploads/2019/07/humanities-arts-social-education-e1652166631748.jpg" alt="Art & Humanities">
+                <h3>Art & Humanities</h3>
+            </a>
+
+        </div>
+    </div>
+</body>
+
+</html>

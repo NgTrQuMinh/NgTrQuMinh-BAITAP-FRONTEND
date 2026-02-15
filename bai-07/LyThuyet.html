@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: 500px;
+            background-color: aqua;
+            padding: 20px;
+        }
+ 
+        .container > .item {
+            width: 200px;
+            height: 100px;
+            background-color: orange;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 7px;
+            margin: 20px;
+            color: black;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+
+        /* XÁC ĐỊNH HƯỚNG SẮP XẾP -- flex-direction */
+            /* flex-direction: row-reverse; Row: [1 2 3] sang trái -> Row-reverse: [1 2 3] sang phải */
+            /* flex-direction: column-reverse; Column: [1 2 3] -> Column-reverse: [3 2 1] trên */
+        
+        /* XÁC ĐỊNH XUỐNG DÒNG -- flex-wrap */
+            /* flex-wrap: wrap; nowrap: mặc định item sẽ trên 1 dòng -> wrap: tổng các item cộng lại lớn hơn chiều rộng box sẽ tự xuống dòng */
+            /* flex-wrap: wrap-reverse; ngược lại với wrap nó sẽ nhảy lên trên  */
+        
+        /* TRỤC NGANG -- justify-content */ 
+            /* justify-content: center; căn giữa hàng ngang, flex-start(left) flex-end(right) */
+            /* justify-content: space-between; căn đều với blox 1 và cuối sẽ sát lễ mỗi bên */
+            /* justify-content: space-around; căn đều các blox với nhau */
+            /* justify-content: space-evenly; căn đều cả lề với blox như nhau */
+
+        /* TRỤC DỌC -- align-items (1 Dòng)*/
+            /* align-items: stretch; mặc định. các box sẽ tự động tăng chiều cao để lấp đầy box cha, nhưng sẽ ưu tiên giá trị height nếu có. */
+            /* align-items: center; căn giữa hàng dọc, flex-star trên đầu, flex-end dưới cuối */
+            
+        /* TRỤC DỌC -- align-content (Nhiều dòng) */
+        }
+
+        /* CĂN CHO 1 ITEM -- align-self */
+        .item:nth-child(2) {
+            align-self: center;
+        }
+
+        /* SẮP XẾP LẠI VỊ TRÍ CÁC ITEM -- ODER: NHỎ LÊN TRƯỚC TO XUỐNG SAU */
+        .item:nth-child(1) {
+            order: 2;
+        }
+        .item:nth-child(2) {
+            order: 0;
+        }
+        .item:nth-child(3) {
+            order: 1;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+        <!-- <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div> -->
+    </div>
+</body>
+</html>
