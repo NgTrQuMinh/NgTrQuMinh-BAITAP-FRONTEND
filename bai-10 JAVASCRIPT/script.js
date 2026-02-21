@@ -51,7 +51,7 @@ var KQC = m++ + m++ + ++m + m++ + m++ + ++m;
 console.log(KQC);
 
 var KQT = n-- + n-- + n-- + --n + n-- + n--;
-    // 10 + 9 + 8 + 6 + 6 + 5 = 44.
+    // 10 + 9 + 8 + 6 + 6 + 5 = 44. 
 console.log(KQT);
 // END ++ AND --
 
