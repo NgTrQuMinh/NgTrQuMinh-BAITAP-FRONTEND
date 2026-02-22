@@ -19,8 +19,6 @@ console.log("1. KHAI BÁO VÀ HÀM IN DỮ LIỆU");
 var Fullname = "Ng Tr Quang Minh";  // Khai báo Biến Fullname
 console.log("Hello, World!");  // In dữ liệu 
 
-// var name = prompt("Nhập tên của bạn:"); console.log(name); // Trả về một String
-
 // TOÁN SỐ HỌC
 console.log("2. TOÁN SỐ HỌC")
 var a, b, c;
