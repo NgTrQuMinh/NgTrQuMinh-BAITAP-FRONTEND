@@ -1,3 +1,13 @@
+// {
+//     let x = 10;
+//     console.log(x); // Kết quả: 10
+// }
+// // console.log(x); // Lỗi: x is not defined (vì x nằm ngoài khối)
+
+// let y = 20;
+// y = 30; // Hợp lệ: gán lại giá trị
+// // let y = 40; // Lỗi: Identifier 'y' has already been declared
+
 // Hello, World.
 var button = document.querySelector("button");
 button.onclick = function () {

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <p>Về lý thuyết là đúng, let (cùng với const) đã được tạo ra để thay thế hoàn toàn cho var trong lập trình JavaScript hiện đại (từ chuẩn ES6 năm 2015). </p>
+    <p>Dù var vẫn hoạt động để đảm bảo tính tương thích với các trang web cũ, nhưng trong các dự án mới, hầu hết lập trình viên đã "khai tử" var vì những lý do sau:</p>
+    <ul>
+        <li>Tránh lỗi tiềm ẩn: var có phạm vi hàm (function scope), dễ gây nhầm lẫn khi biến "lọt" ra ngoài các khối lệnh if hay for. let giới hạn biến trong đúng khối { } chứa nó, giúp mã nguồn minh bạch hơn.</li>
+        <li>An toàn hơn: let không cho phép bạn khai báo lại cùng một tên biến trong một phạm vi, giúp ngăn chặn việc vô tình ghi đè dữ liệu.</li>
+        <li>Dễ bảo trì: Các công cụ kiểm tra code (linting) và các framework hiện đại đều khuyến nghị dùng let/const làm tiêu chuẩn.</li>
+    </ul>
+    <button>Click</button>
+    <script src="Basic.js"></script>
+</body>
+</html>
